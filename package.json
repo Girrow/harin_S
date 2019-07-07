@@ -1,5 +1,5 @@
 {
-  "name": "harin_S",
+  "name": "harin_s",
   "version": "1.0.0",
   "description": "storage",
   "main": "app.js",
@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/Girrow/harin_S#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
+    "mariadb": "^2.0.5",
+    "path": "^0.12.7",
     "serve-static": "^1.14.1"
   }
 }
