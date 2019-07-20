@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Multer Upload
+	</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		name
+
+		<p>
+			file :
+			<input type="file" name="mp3" multiple>
+			<input type="submit" value="Upload">
+	</form>
+	<br/>
+	<form action="/music/music_stop" method="post">
+		<input type="submit" value="Stop">
+	</form>
+
+</body>
+
+</html>

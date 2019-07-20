@@ -1,0 +1,42 @@
+{
+  "name": "ava",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"sudo npm run server-start\" ",
+    "server-start": "node ./bin/www",
+    "record-start": "forever stt.js"
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^1.5.0",
+    "@kuronekomichael/omxdirector": "^0.1.2",
+    "bleno": "^0.5.0",
+    "bluetoothctl": "^1.1.0",
+    "buffer-reader": "^0.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "circular-json": "^0.5.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "firebase": "^5.5.3",
+    "firebase-admin": "^6.0.0",
+    "hex-rgb": "^3.0.0",
+    "http-errors": "~1.6.2",
+    "johnny-five": "^1.0.0",
+    "morgan": "~1.9.0",
+    "mplayer": "^2.1.0",
+    "multer": "^1.3.1",
+    "mysql": "^2.15.0",
+    "noble": "^1.9.1",
+    "node-pixel": "^0.10.1",
+    "node-record-lpcm16": "^0.3.0",
+    "onoff": "^3.1.0",
+    "pi-wifi": "^1.2.0",
+    "pigpio": "^1.0.0",
+    "play-sound": "^1.1.2",
+    "rpi-wifi-connection": "^1.0.14",
+    "rpi-ws281x-native": "^1.0.0-alpha1",
+    "socket.io": "^2.1.1"
+  }
+}

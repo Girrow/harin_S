@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		<%= title %>
+	</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+	<h1>LED page</h1>
+	<form action="/remote/ble/motor_open" method="post">
+		<label>라디오 재생</label>
+		<input type="submit">
+	</form>
+	<form action="/remote/ble/motor_close" method="post">
+		<label>라디오 끄기</label>
+		<input type="submit">
+	</form>
+</body>
+
+</html>

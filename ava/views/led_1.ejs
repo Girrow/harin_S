@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		<%= title %>
+	</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+	<h1>LED page</h1>
+	<form action='/led' method='post'>
+		<input type='submit' value='on' name='led'>
+		<input type='submit' value='off' name='led'>
+	</form>
+	<hr />
+	<form action='/net/led/update_theme' method='post'>
+		<input type='text' name='user'>
+		<input type='text' name='theme'>
+		<input type='text' name='color'>
+		<input type='submit'>
+	</form>
+	<form action="/radio/radio_start" method="post">
+		<label>라디오 재생</label>
+		<input type='text' name='radio_address'>
+		<input type="submit">
+	</form>
+	<form action="/radio/radio_stop" method="post">
+		<label>라디오 끄기</label>
+		<input type="submit">
+	</form>
+</body>
+
+</html>

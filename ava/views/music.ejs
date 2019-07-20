@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Multer Upload
+	</title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+	<br/>
+	<form action="/music/music_start" method="post">
+		<select name="filename" multiple>
+			<% lists.forEach((item) =>{ %>
+			<option value="<%= item.music_name %>"><%= item.music_name %></option>
+			<% }) %>
+		</select>
+		<input type="submit" value="Start">
+	</form>
+
+	<br/>
+	<form action="/music/music_pause" method="post">
+		<input type="submit" value="Pause">
+	</form>
+
+	<br/>
+	<form action="/music/music_stop" method="post">
+		<input type="submit" value="Stop">
+	</form>
+	<br/>
+	<form action="/music/music_seek" method="post">
+		<input type="text" name="time">
+		<input type="submit" value="Stop">
+	</form>
+</body>
+
+</html>
