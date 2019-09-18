@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 //네이버 tts(Text->Speech)
 var client_id = 'mndf5m4qeu';
-var client_secret = 'RDchLs9M6iW3RtkjP3GMOnz87H8Pmz7IXhBjNCqF';
+var client_secret = '<YOUR KEY>';
 var fs = require('fs');
 
 router.get('/', function (req, res) {
